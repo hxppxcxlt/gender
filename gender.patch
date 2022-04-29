@@ -1,0 +1,695 @@
+diff -ur firestorm/character/avatar_lad.xml firestorm.patched/character/avatar_lad.xml
+--- firestorm/character/avatar_lad.xml	2021-05-01 00:25:39.000000000 -0600
++++ firestorm.patched/character/avatar_lad.xml	2022-04-29 16:27:52.230999173 -0600
+@@ -3824,7 +3824,7 @@
+ 	<param
+      id="30879"
+      group="1"
+-     sex="male"
++     
+      name="Male_Package"
+      value_min="-.5"
+      value_max="2">
+@@ -5815,7 +5815,7 @@
+ 
+     <param
+      id="400"
+-     sex="male"
++     
+      group="1"
+      name="Displace_Hair_Facial"
+      label="Hair Thickess"
+@@ -6840,7 +6840,7 @@
+ 
+     <param
+      id="626"
+-     sex="female"
++     
+      group="1"
+      name="Big_Chest"
+      label="Chest Size"
+@@ -6867,7 +6867,7 @@
+ 
+     <param
+      id="627"
+-     sex="female"
++     
+      group="1"
+      name="Small_Chest"
+      label="Chest Size"
+@@ -6893,7 +6893,7 @@
+ 
+     <param
+      id="843"
+-     sex="female"
++     
+      group="1"
+      name="No_Chest"
+      label="Chest Size"
+@@ -6922,7 +6922,7 @@
+      group="1"
+      name="Muscular_Torso"
+      label="Torso Muscles"
+-   sex="male"
++   
+      show_simple="true"
+      wearable="shape"
+      edit_group="shape_torso"
+@@ -6965,7 +6965,7 @@
+         group="1"
+         name="Muscular_Torso"
+         label="Torso Muscles"
+-        sex="female"
++        
+         show_simple="true"
+      wearable="shape"
+      edit_group="shape_torso"
+@@ -7006,7 +7006,7 @@
+     <param
+      id="648"
+      group="1"
+-     sex="female"
++     
+      name="Scrawny_Torso"
+      label="Torso Muscles"
+    show_simple="true"
+@@ -7061,7 +7061,7 @@
+     <param
+      id="677"
+      group="1"
+-     sex="male"
++     
+      name="Scrawny_Torso_Male"
+      label="Torso Scrawny"
+      wearable="shape"
+@@ -7194,7 +7194,7 @@
+     <param
+      id="507"
+      group="0"
+-     sex="female"
++     
+      name="Breast_Gravity"
+      label="Breast Buoyancy"
+      wearable="shape"
+@@ -7281,7 +7281,7 @@
+     <param
+      id="684"
+      group="0"
+-     sex="female"
++     
+      name="Breast_Female_Cleavage"
+      label="Breast Cleavage"
+      wearable="shape"
+@@ -7309,7 +7309,7 @@
+     <param
+      id="685"
+      group="0"
+-     sex="male"
++     
+      name="Chest_Male_No_Pecs"
+      label="Pectorals"
+      wearable="shape"
+@@ -7527,7 +7527,7 @@
+     <param
+      id="1200"
+      group="1"
+-     sex="female"
++     
+      name="Breast_Physics_UpDown_Driven"
+      wearable="physics"
+      edit_group="driven"
+@@ -7549,7 +7549,7 @@
+     <param
+      id="1201"
+      group="1"
+-     sex="female"
++     
+      name="Breast_Physics_InOut_Driven"
+      wearable="physics"
+      edit_group="driven"
+@@ -8081,7 +8081,7 @@
+     <param
+      id="20879"
+      group="1"
+-     sex="male"
++     
+      name="Male_Package"
+      value_min="-.5"
+      value_max="2">
+@@ -9839,7 +9839,7 @@
+ 
+       <param
+        id="1004"
+-       sex="male"
++       
+        group="1"
+        wearable="hair"
+        edit_group="driven"
+@@ -9854,7 +9854,7 @@
+ 
+       <param
+        id="1006"
+-       sex="male"
++       
+        group="1"
+        wearable="hair"
+        edit_group="driven"
+@@ -9869,7 +9869,7 @@
+ 
+       <param
+        id="1008"
+-       sex="male"
++       
+        group="1"
+        wearable="hair"
+        edit_group="driven"
+@@ -9884,7 +9884,7 @@
+ 
+       <param
+        id="1010"
+-       sex="male"
++       
+        group="1"
+        edit_group="driven"
+        wearable="hair"
+@@ -9900,7 +9900,7 @@
+       <param
+        id="1012"
+        group="1"
+-       sex="male"
++       
+        wearable="hair"
+        edit_group="driven"
+        name="5 O'Clock Shadow bump"
+@@ -9926,7 +9926,7 @@
+ 
+       <param
+        id="1005"
+-       sex="male"
++       
+        group="1"
+        wearable="hair"
+        edit_group="driven"
+@@ -9941,7 +9941,7 @@
+ 
+       <param
+        id="1007"
+-       sex="male"
++       
+        group="1"
+        wearable="hair"
+        edit_group="driven"
+@@ -9956,7 +9956,7 @@
+ 
+       <param
+        id="1009"
+-       sex="male"
++       
+        group="1"
+        wearable="hair"
+        edit_group="driven"
+@@ -9971,7 +9971,7 @@
+ 
+       <param
+        id="1011"
+-       sex="male"
++       
+        group="1"
+        wearable="hair"
+        edit_group="driven"
+@@ -9988,7 +9988,7 @@
+        id="751"
+        group="1"
+        wearable="hair"
+-       sex="male"
++       
+        edit_group="hair_facial"
+        name="5 O'Clock Shadow"
+        label_min="Dense hair"
+@@ -15069,7 +15069,7 @@
+     <param
+      id="105"
+      group="0"
+-     sex="female"
++     
+      wearable="shape"
+      edit_group="shape_torso"
+      edit_group_order="6"
+@@ -15234,7 +15234,7 @@
+     <param
+      id="649"
+      group="0"
+-     sex="female"
++     
+      wearable="shape"
+      edit_group="shape_torso"
+      edit_group_order="1.1"
+@@ -15269,7 +15269,7 @@
+     <param
+      id="678"
+      group="0"
+-     sex="male"
++     
+      wearable="shape"
+      edit_group="shape_torso"
+      edit_group_order="1"
+@@ -15337,10 +15337,14 @@
+      id="80"
+      name="male"
+      group="0"
+-     edit_group="dummy"
++     edit_group="shape_body"
++     label="Gender"
++     label_min="Female"
++     label_max="Male"
+      wearable="shape"
+      value_min="0"
+-     value_max="1">
++     value_max="1"
++     camera_distance="2.2">
+       <param_driver>
+         <driven
+          id="32" />
+@@ -15555,7 +15559,7 @@
+     <param
+      id="752"
+      group="0"
+-     sex="male"
++     
+      wearable="hair"
+      edit_group="hair_facial"
+      edit_group_order="1"
+@@ -15837,7 +15841,7 @@
+     <param
+      id="879"
+      group="0"
+-     sex="male"
++     
+      name="Male_Package"
+      label="Package"
+      wearable="shape"
+@@ -16025,7 +16029,7 @@
+ 
+     <param
+      id="166"
+-     sex="male"
++     
+      group="0"
+      wearable="hair"
+      edit_group="hair_facial"
+@@ -16051,7 +16055,7 @@
+ 
+     <param
+      id="167"
+-     sex="male"
++     
+      group="0"
+      wearable="hair"
+      edit_group="hair_facial"
+@@ -16077,7 +16081,7 @@
+ 
+     <param
+      id="168"
+-     sex="male"
++     
+      group="0"
+      wearable="hair"
+      edit_group="hair_facial"
+@@ -16103,7 +16107,7 @@
+ 
+     <param
+      id="169"
+-     sex="male"
++     
+      group="0"
+      wearable="hair"
+      edit_group="hair_facial"
+@@ -16916,7 +16920,7 @@
+    <param
+      id="1100"
+      group="1"
+-     sex="female"
++     
+      wearable="physics"
+      name="Breast_Physics_UpDown_Controller"
+      label="Breast Physics UpDown Controller"
+@@ -16932,7 +16936,7 @@
+    <param
+      id="1101"
+      group="1"
+-     sex="female"
++     
+      wearable="physics"
+      name="Breast_Physics_InOut_Controller"
+      label="Breast Physics InOut Controller"
+@@ -17012,7 +17016,7 @@
+     <param
+      id="10000"
+      group="0"
+-     sex="female"
++     
+      name="Breast_Physics_Mass"
+      label="Breast Physics Mass"
+      wearable="physics"
+@@ -17025,7 +17029,7 @@
+     <param
+      id="10001"
+      group="0"
+-     sex="female"
++     
+      name="Breast_Physics_Gravity"
+      label="Breast Physics Gravity"
+      wearable="physics"
+@@ -17039,7 +17043,7 @@
+    <param
+      id="10002"
+      group="0"
+-     sex="female"
++     
+      name="Breast_Physics_Drag"
+      label="Breast Physics Drag"
+      wearable="physics"
+@@ -17053,7 +17057,7 @@
+    <param
+      id="10003"
+      group="0"
+-     sex="female"
++     
+      name="Breast_Physics_UpDown_Max_Effect"
+      label="Breast Physics UpDown Max Effect"
+      wearable="physics"
+@@ -17066,7 +17070,7 @@
+     <param
+      id="10004"
+      group="0"
+-     sex="female"
++     
+      name="Breast_Physics_UpDown_Spring"
+      label="Breast Physics UpDown Spring"
+      wearable="physics"
+@@ -17079,7 +17083,7 @@
+     <param
+      id="10005"
+      group="0"
+-     sex="female"
++     
+      name="Breast_Physics_UpDown_Gain"
+      label="Breast Physics UpDown Gain"
+      wearable="physics"
+@@ -17092,7 +17096,7 @@
+     <param
+      id="10006"
+      group="0"
+-     sex="female"
++     
+      name="Breast_Physics_UpDown_Damping"
+      label="Breast Physics UpDown Damping"
+      wearable="physics"
+@@ -17106,7 +17110,7 @@
+    <param
+      id="10007"
+      group="0"
+-     sex="female"
++     
+      name="Breast_Physics_InOut_Max_Effect"
+      label="Breast Physics InOut Max Effect"
+      wearable="physics"
+@@ -17119,7 +17123,7 @@
+     <param
+      id="10008"
+      group="0"
+-     sex="female"
++     
+      name="Breast_Physics_InOut_Spring"
+      label="Breast Physics InOut Spring"
+      wearable="physics"
+@@ -17132,7 +17136,7 @@
+     <param
+      id="10009"
+      group="0"
+-     sex="female"
++     
+      name="Breast_Physics_InOut_Gain"
+      label="Breast Physics InOut Gain"
+      wearable="physics"
+@@ -17145,7 +17149,7 @@
+     <param
+      id="10010"
+      group="0"
+-     sex="female"
++     
+      name="Breast_Physics_InOut_Damping"
+      label="Breast Physics InOut Damping"
+      wearable="physics"
+@@ -17379,7 +17383,7 @@
+    <param
+      id="10029"
+      group="0"
+-     sex="female"
++     
+      name="Breast_Physics_LeftRight_Max_Effect"
+      label="Breast Physics LeftRight Max Effect"
+      wearable="physics"
+@@ -17392,7 +17396,7 @@
+     <param
+      id="10030"
+      group="0"
+-     sex="female"
++     
+      name="Breast_Physics_LeftRight_Spring"
+      label="Breast Physics LeftRight Spring"
+      wearable="physics"
+@@ -17405,7 +17409,7 @@
+     <param
+      id="10031"
+      group="0"
+-     sex="female"
++     
+      name="Breast_Physics_LeftRight_Gain"
+      label="Breast Physics LeftRight Gain"
+      wearable="physics"
+@@ -17418,7 +17422,7 @@
+     <param
+      id="10032"
+      group="0"
+-     sex="female"
++     
+      name="Breast_Physics_LeftRight_Damping"
+      label="Breast Physics LeftRight Damping"
+      wearable="physics"
+diff -ur firestorm/skins/default/xui/da/strings.xml firestorm.patched/skins/default/xui/da/strings.xml
+--- firestorm/skins/default/xui/da/strings.xml	2021-10-10 15:28:02.000000000 -0600
++++ firestorm.patched/skins/default/xui/da/strings.xml	2022-04-29 16:41:30.586989356 -0600
+@@ -2698,6 +2698,9 @@
+ 	<string name="Full Sides">
+ 		Meget hår
+ 	</string>
++        <string name="Gender">
++                Køn
++        </string>
+ 	<string name="Glossy">
+ 		Skinnende
+ 	</string>
+diff -ur firestorm/skins/default/xui/de/strings.xml firestorm.patched/skins/default/xui/de/strings.xml
+--- firestorm/skins/default/xui/de/strings.xml	2021-10-10 15:28:02.000000000 -0600
++++ firestorm.patched/skins/default/xui/de/strings.xml	2022-04-29 16:40:28.537998273 -0600
+@@ -3762,6 +3762,9 @@
+ 	<string name="Full Sides">
+ 		Volle Seiten
+ 	</string>
++        <string name="Gender">
++                Geschlecht
++        </string>
+ 	<string name="Glossy">
+ 		Glänzend
+ 	</string>
+diff -ur firestorm/skins/default/xui/en/panel_edit_wearable.xml firestorm.patched/skins/default/xui/en/panel_edit_wearable.xml
+--- firestorm/skins/default/xui/en/panel_edit_wearable.xml	2021-10-10 15:28:02.000000000 -0600
++++ firestorm.patched/skins/default/xui/en/panel_edit_wearable.xml	2022-04-29 16:27:52.230999173 -0600
+@@ -202,57 +202,7 @@
+          top="10"
+          value="Shape:"
+          width="150" />
+-        <radio_group
+-         control_name="AvatarSex"
+-         follows="top|right"
+-         height="20"
+-         layout="topleft"
+-         left="210"
+-         name="sex_radio"
+-         top="5"
+-         width="110">
+-            <radio_item
+-             follows="all"
+-             height="16"
+-             label=""
+-             layout="topleft"
+-             left="0"
+-             name="sex_male"
+-             tool_tip="Male"
+-             value="1"
+-             width="40" />
+-            <radio_item
+-             follows="all"
+-             height="16"
+-             label=""
+-             layout="topleft"
+-             left_pad="10"
+-             name="sex_female"
+-             tool_tip="Female"
+-             value="0"
+-             width="40"/>
+-        </radio_group>
+-        <!--  graphical labels for the radio buttons above -->
+-        <icon
+-         follows="top|right"
+-         height="16"
+-         image_name="icons/Male.png"
+-         layout="topleft"
+-         left="230"
+-         name="male_icon"
+-         tool_tip="Male"
+-         top="7"
+-         width="16" />
+-        <icon
+-         follows="top|right"
+-         height="16"
+-         image_name="icons/Female.png"
+-         layout="topleft"
+-         left="280"
+-         name="female_icon"
+-         tool_tip="Female"
+-         top="7"
+-         width="16" />
++       
+         <line_editor
+          follows="all"
+          height="23"
+diff -ur firestorm/skins/default/xui/en/strings.xml firestorm.patched/skins/default/xui/en/strings.xml
+--- firestorm/skins/default/xui/en/strings.xml	2021-10-10 15:28:02.000000000 -0600
++++ firestorm.patched/skins/default/xui/en/strings.xml	2022-04-29 16:30:22.391594803 -0600
+@@ -1717,6 +1717,7 @@
+ <string name="Full Front">Full Front</string>
+ <string name="Full Hair Sides">Full Hair Sides</string>
+ <string name="Full Sides">Full Sides</string>
++<string name="Gender">Gender</string>
+ <string name="Glossy">Glossy</string>
+ <string name="Glove Fingers">Glove Fingers</string>
+ 
+diff -ur firestorm/skins/default/xui/es/strings.xml firestorm.patched/skins/default/xui/es/strings.xml
+--- firestorm/skins/default/xui/es/strings.xml	2021-10-10 15:28:02.000000000 -0600
++++ firestorm.patched/skins/default/xui/es/strings.xml	2022-04-29 16:35:45.372679473 -0600
+@@ -3474,6 +3474,9 @@
+ 	<string name="Full Sides">
+ 		Volumen total
+ 	</string>
++        <string name="Gender">
++                Sexo
++        </string>
+ 	<string name="Glossy">
+ 		Con brillo
+ 	</string>
+diff -ur firestorm/skins/default/xui/fr/strings.xml firestorm.patched/skins/default/xui/fr/strings.xml
+--- firestorm/skins/default/xui/fr/strings.xml	2021-10-10 15:28:02.000000000 -0600
++++ firestorm.patched/skins/default/xui/fr/strings.xml	2022-04-29 16:39:06.562672592 -0600
+@@ -3441,6 +3441,9 @@
+ 	<string name="Full Sides">
+ 		Côtés touffus
+ 	</string>
++        <string name="Gender">
++                Sexe
++        </string>
+ 	<string name="Glossy">
+ 		Brillant
+ 	</string>
+diff -ur firestorm/skins/default/xui/it/strings.xml firestorm.patched/skins/default/xui/it/strings.xml
+--- firestorm/skins/default/xui/it/strings.xml	2021-10-10 15:28:02.000000000 -0600
++++ firestorm.patched/skins/default/xui/it/strings.xml	2022-04-29 16:37:28.404292489 -0600
+@@ -3547,6 +3547,9 @@
+ 	<string name="Full Sides">
+ 		Lati gonfi
+ 	</string>
++        <string name="Gender">
++                Sesso
++        </string>
+ 	<string name="Glossy">
+ 		Lucido
+ 	</string>
+diff -ur firestorm/skins/default/xui/ja/strings.xml firestorm.patched/skins/default/xui/ja/strings.xml
+--- firestorm/skins/default/xui/ja/strings.xml	2021-10-10 15:28:02.000000000 -0600
++++ firestorm.patched/skins/default/xui/ja/strings.xml	2022-04-29 16:40:04.188395582 -0600
+@@ -3562,6 +3562,9 @@
+ 	<string name="Full Sides">
+ 		生え揃ったサイド
+ 	</string>
++        <string name="Gender">
++                性別
++        </string>
+ 	<string name="Glossy">
+ 		あり
+ 	</string>
+diff -ur firestorm/skins/default/xui/pl/strings.xml firestorm.patched/skins/default/xui/pl/strings.xml
+--- firestorm/skins/default/xui/pl/strings.xml	2021-10-10 15:28:02.000000000 -0600
++++ firestorm.patched/skins/default/xui/pl/strings.xml	2022-04-29 16:39:32.292250627 -0600
+@@ -3545,6 +3545,9 @@
+ 	<string name="Full Sides">
+ 		Gęste boki
+ 	</string>
++        <string name="Gender">
++                Płeć
++        </string>
+ 	<string name="Glossy">
+ 		Błyszcząca
+ 	</string>
+diff -ur firestorm/skins/default/xui/pt/strings.xml firestorm.patched/skins/default/xui/pt/strings.xml
+--- firestorm/skins/default/xui/pt/strings.xml	2021-10-10 15:28:02.000000000 -0600
++++ firestorm.patched/skins/default/xui/pt/strings.xml	2022-04-29 16:35:03.030060103 -0600
+@@ -3290,6 +3290,9 @@
+ 	<string name="Full Sides">
+ 		Lados cheios
+ 	</string>
++        <string name="Gender">
++                Sexo
++        </string>
+ 	<string name="Glossy">
+ 		Brilhante
+ 	</string>
+diff -ur firestorm/skins/default/xui/ru/strings.xml firestorm.patched/skins/default/xui/ru/strings.xml
+--- firestorm/skins/default/xui/ru/strings.xml	2021-10-10 15:28:02.000000000 -0600
++++ firestorm.patched/skins/default/xui/ru/strings.xml	2022-04-29 16:36:59.228110723 -0600
+@@ -3736,6 +3736,9 @@
+ 	<string name="Full Sides">
+ 		По бокам
+ 	</string>
++        <string name="Gender">
++		Пол
++        </string>
+ 	<string name="Glossy">
+ 		Блестящие
+ 	</string>
+diff -ur firestorm/skins/default/xui/tr/strings.xml firestorm.patched/skins/default/xui/tr/strings.xml
+--- firestorm/skins/default/xui/tr/strings.xml	2021-10-10 15:28:02.000000000 -0600
++++ firestorm.patched/skins/default/xui/tr/strings.xml	2022-04-29 16:38:17.273483928 -0600
+@@ -3451,6 +3451,9 @@
+ 	<string name="Full Sides">
+ 		Saçlar Yanda
+ 	</string>
++        <string name="Gender">
++                Cinsiyet
++        </string>
+ 	<string name="Glossy">
+ 		Parlak
+ 	</string>
+diff -ur firestorm/skins/default/xui/zh/strings.xml firestorm.patched/skins/default/xui/zh/strings.xml
+--- firestorm/skins/default/xui/zh/strings.xml	2021-10-10 15:28:02.000000000 -0600
++++ firestorm.patched/skins/default/xui/zh/strings.xml	2022-04-29 16:36:18.802118810 -0600
+@@ -3372,6 +3372,9 @@
+ 	<string name="Full Sides">
+ 		兩側飽滿
+ 	</string>
++        <string name="Gender">
++                性别
++        </string>
+ 	<string name="Glossy">
+ 		光亮
+ 	</string>
